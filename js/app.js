@@ -65,6 +65,7 @@ let score = 0;
     Score-100;
   } else {
     alert('i said it million times yes or no');
+    console.log('i think you know me a little');
   }
 
 
@@ -80,9 +81,27 @@ let score = 0;
     totalScore++;
   } else {
     alert('plz I am done with you');
-  }
+  } 
+
+
+// numbers game 
+
+let userName = prompt(' What is your name?');
+
+let guess = prompt('pick a number from 1 - 100');
+
+let rightNumber = 27
+
+alert('you will have only 4 chances to guess what number i am thinking about from 1 to 100 ' + userName + 'ok');
+
+
+for( let i = 0 ; i <= 3 ; i++ ){
+    let guess = prompt ((i+1) + 'how much'+userName)
+}
 
 
 
-
-
+if(guess === rightNumber){
+alert('you are correct')
+}else alert('good luck next time')
+ 
