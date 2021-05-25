@@ -6,7 +6,11 @@ let score = 0;
     alert('well ' + userName + 'lets see how much you know me?');
     
   
-    let userQOne = prompt('am i smart?').toLowerCase();
+    let userQOne = prompt('am i smart?')
+
+    userQOne = userQOne.toLowerCase()
+
+
 
   if (userQOne === 'yes' || userQOne === 'y') {
     alert('you bet i am');
@@ -20,19 +24,25 @@ let score = 0;
 
 
 
-  let userQtwo= prompt('do I love animals?').toLowerCase();
+  let userQtwo= prompt('do I love animals?')
+
+  userQtwo = userQtwo.toLowerCase()
+
 
   if (userQtwo === 'no' || userQtwo=== 'n') {
     alert('thats right but I dont mind petting a cat.');
   } else if (userQtwo=== 'yes' || userQtwo=== 'y') {
     alert('not entirly false');
-    Score++;
+    score++;
   } else {
     alert('again it should be yes or no');
     score-5;
   }
 
-      let userQthree = prompt('Mohammed has no siblings').toLowerCase();
+      let userQthree = prompt('Mohammed has no siblings')
+
+      userQthree = userQthree.toLowerCase()
+
 
   if (userQthree === 'no' || userQthree === 'n') {
     alert('Nah,i has 3 siblings.');
@@ -44,7 +54,9 @@ let score = 0;
   }
 
 
-  let userQfour = prompt('i am an English major').toLowerCase();
+  let userQfour = prompt('i am an English major')
+  userQfour = userQfour.toLowerCase()
+
 
   if (userQfour === 'yes' || userQfour === 'y') {
     alert('correct, you deserve a treat ');
@@ -57,11 +69,13 @@ let score = 0;
 
 
 
-  let userQfifth = prompt('am I at a jop right now ').toLowerCase();
+  let userQfifth = prompt('am I at a jop right now ')
+  userQfifth = userQfifth.toLowerCase()
+
 
   if (userQfifth === 'yes' || userQfifth === 'y') {
     alert('really not your day');
-  } else if (userQfifth === 'no' || fifthAnswer === 'n') {
+  } else if (userQfifth === 'no' || userQfifth === 'n') {
     alert('Very good');
     totalScore++;
   } else {
