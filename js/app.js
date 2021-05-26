@@ -1,14 +1,14 @@
 'use strict';
 
 let score = 0;
+function q1() {
+  let userName = prompt(' What is your name?');
+  alert('well ' + userName + 'lets see how much you know me?');
 
-   let userName = prompt(' What is your name?');
-    alert('well ' + userName + 'lets see how much you know me?');
-    
-  
-    let userQOne = prompt('am i smart?')
 
-    userQOne = userQOne.toLowerCase()
+  let userQOne = prompt('am i smart?')
+
+  userQOne = userQOne.toLowerCase()
 
 
 
@@ -21,9 +21,11 @@ let score = 0;
     alert('sorry you should say yes to get score.');
     score-5;
   }
+}
+q1() ;
 
 
-
+function q2(){
   let userQtwo= prompt('do I love animals?')
 
   userQtwo = userQtwo.toLowerCase()
@@ -38,22 +40,27 @@ let score = 0;
     alert('again it should be yes or no');
     score-5;
   }
+}
+q2();
+function q3(){
 
-      let userQthree = prompt('Mohammed has no siblings')
+  let userQthree = prompt('Mohammed has no siblings')
 
-      userQthree = userQthree.toLowerCase()
+  userQthree = userQthree.toLowerCase()
 
 
   if (userQthree === 'no' || userQthree === 'n') {
     alert('Nah,i has 3 siblings.');
   } else if (userQthree === 'yes' || userQthree === 'y') {
     alert(' correct,nice one');
-    Score++;
+    score++;
   } else {
     alert('do i have to tell you every time its yes or no ');
   }
+}
+q3();
 
-
+function q4(){
   let userQfour = prompt('i am an English major')
   userQfour = userQfour.toLowerCase()
 
@@ -62,14 +69,16 @@ let score = 0;
     alert('correct, you deserve a treat ');
   } else if (userQfour === 'no' || userQfour === 'n') {
     alert('oops! Not your day ');
-    Score-100;
+    score-100;
   } else {
     alert('i said it million times yes or no');
     console.log('i think you know me a little');
   }
+}
+q4() ;
 
 
-
+function q5(){
   let userQfifth = prompt('am I at a jop right now ')
   userQfifth = userQfifth.toLowerCase()
 
@@ -78,30 +87,13 @@ let score = 0;
     alert('really not your day');
   } else if (userQfifth === 'no' || userQfifth === 'n') {
     alert('Very good');
-    totalScore++;
+   score++;
   } else {
     alert('plz I am done with you');
-  } 
-
-
-// numbers game 
-
-let userName = prompt(' What is your name?');
-
-let guess = prompt('pick a number from 1 - 100');
-
-let rightNumber = 27
-
-alert('you will have only 4 chances to guess what number i am thinking about from 1 to 100 ' + userName + 'ok');
-
-
-for( let i = 0 ; i <= 3 ; i++ ){
-    let guess = prompt ((i+1) + 'how much'+userName)
+  }
 }
+q5();
 
 
 
-if(guess === rightNumber){
-alert('you are correct')
-}else alert('good luck next time')
- 
+
