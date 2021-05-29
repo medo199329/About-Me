@@ -95,5 +95,40 @@ function q5(){
 q5();
 
 
+function q6() {
+  let favNumber = 27
+  let counter = 0;
+  let guessedNumber = prompt('guess my favorite number. you have four chances');
+
+while (guessedNumber !== favNumber && counter < 3) {
+console.log(counter);
+counter++;
+
+if (guessedNumber < favNumber) {
+
+  guessedNumber = prompt('Your guess was too low. Try again');
+} else if (guessedNumber > favNumber) {
+  guessedNumber = prompt('Your guess was too high. Try again.');
+}
+
+if (guessedNumber === favNumber) { 
+alert('Correct!'); 
+} else {
+alert( favNumber)
+}
+}
+}
 
 
+function q7() {
+  //create an array
+let guessPlaces = prompt('Can you guess where im from?');
+let towns = ['New York', 'Dallas', 'Massachusetts']
+let sixGuesses = 0;
+console.log(towns);
+
+while (guessPlaces !== towns && sixGuesses < 5) {
+console.log(sixGuesses);
+sixGuesses++;
+}
+}
