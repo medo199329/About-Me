@@ -69,7 +69,7 @@ function q4(){
     alert('correct, you deserve a treat ');
   } else if (userQfour === 'no' || userQfour === 'n') {
     alert('oops! Not your day ');
-    score-100;
+    score++;
   } else {
     alert('i said it million times yes or no');
     console.log('i think you know me a little');
